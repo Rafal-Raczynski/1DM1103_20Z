@@ -3,12 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-    float a,b;
+    float a;
     
     a=atof(argv[1]);
-    b=atof(argv[2]);
-
-       
-
-    printf("Suma:%f\n", a+b);
+    
+    printf("Wartość %f do kwadratu to %f.\n", a,a*a);
+    
+    return 0;
 }
