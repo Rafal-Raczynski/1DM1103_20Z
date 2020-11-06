@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
             wczytaj(plik1,&m1);
             wczytaj(plik2,&m2);
             if((m1.wiersze != m2.wiersze)|| (m1.kolumny != m2.kolumny))
-            printf("Nie można dodać tych macierzy\n");
+            printf("Nie można odjąć tych macierzy\n");
             else
             {
                 subtract(m1,m2,&wynikowa);
