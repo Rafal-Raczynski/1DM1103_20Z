@@ -73,14 +73,14 @@ struct Macierz prod(struct Macierz m, struct Macierz n, struct Macierz *wynikowy
 {   
     float sum=0;
     for(int i=0; i < m.wiersze; i++)
-    {    for(int j=0; j < m.kolumny; j++)
+    {    for(int j=0; j < n.kolumny; j++)
         {   
             for(int k=0; k < m.kolumny; k++)
             wynikowy->tab[i][j] += m.tab[i][k] * n.tab[k][j];
         }
     }
     wynikowy->wiersze=m.wiersze;
-    wynikowy->kolumny=m.kolumny;
+    wynikowy->kolumny=n.kolumny;
 }
 
 float multiply(struct Macierz m, float a,struct Macierz *wynikowy) 
