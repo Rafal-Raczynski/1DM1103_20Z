@@ -61,7 +61,7 @@ int znajdz(char *szukany_kod, char kod[100][10], int n) {
     return -1;
 }
 
-int znajdz_kod(char kod[100][10],char nazwa [100][40], student dane[100], int n) {
+int znajdz_kod(char kod[100][10],char nazwa [100][200], student dane[100], int n) {
     int ile_znalazlem = 0;
     int i;
     
@@ -88,7 +88,13 @@ void najgorszy_i_najlepszy_przedmiot(student dane[100], int ile_rekordow) {
     int najgorsza_pozycja;
     float najlepsza = 0.0f;
     float najgorsza = 1000;
-    char nazwa [100][40];
+    char nazwa [100][200];
+    for (int i=0; i<100; i++)
+    {
+        sumy_wazonych_ocen[i]=0;
+        sumy_ects[i]=0;
+        
+    }
 
 
     ile_przedmiot = znajdz_kod(kod, nazwa, dane, ile_rekordow);
