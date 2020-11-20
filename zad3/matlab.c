@@ -37,8 +37,10 @@ void wypisz(struct Macierz m)
     printf("]\n");
 }
 
+
 void wypisztxt(FILE *fin,struct Macierz m) 
 {
+    
     int i, j;
     fprintf(fin,"%d\n%d\n",m.wiersze,m.kolumny);
     for (i = 0; i < m.wiersze; i++)
@@ -49,6 +51,7 @@ void wypisztxt(FILE *fin,struct Macierz m)
         }
         fprintf(fin,"\n");
     }
+    
 }
 
 void sum(struct Macierz m, struct Macierz n, struct Macierz *wynikowy)

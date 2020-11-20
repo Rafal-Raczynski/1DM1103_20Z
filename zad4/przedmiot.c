@@ -61,7 +61,7 @@ int znajdz(char *szukany_kod, char kod[100][10], int n) {
     return -1;
 }
 
-int znajdz_kod(char kod[100][10],char nazwa [100][200], student dane[100], int n) {
+int znajdz_kod(char kod[100][10], student dane[100], int n) {
     int ile_znalazlem = 0;
     int i;
     
@@ -69,7 +69,7 @@ int znajdz_kod(char kod[100][10],char nazwa [100][200], student dane[100], int n
     for (i=0; i <n; i++) {
         if (znajdz(dane[i].kod_przed, kod, ile_znalazlem ) == -1) {
             strncpy(kod[ile_znalazlem], dane[i].kod_przed, 9);
-            strncpy(nazwa[ile_znalazlem], dane[i].nazwa_przed, 40);
+            
             ile_znalazlem++;
         }
     }
@@ -97,11 +97,12 @@ void najgorszy_i_najlepszy_przedmiot(student dane[100], int ile_rekordow) {
     }
 
 
-    ile_przedmiot = znajdz_kod(kod, nazwa, dane, ile_rekordow);
+    ile_przedmiot = znajdz_kod(kod, dane, ile_rekordow);
 
     for (i=0; i < ile_rekordow; i++) {
         pozycja = znajdz( dane[i].kod_przed, kod, ile_przedmiot );
         // if (pozycje >= 0)
+        strncpy(nazwa[pozycja], dane[i].nazwa_przed, 40);
         sumy_wazonych_ocen[pozycja] += dane[i].ocena * dane[i].ects;
         sumy_ects[pozycja] += dane[i].ects;
     }    
