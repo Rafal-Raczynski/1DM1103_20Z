@@ -1,6 +1,6 @@
 10
-Jan|Kowalski|123456|1DE1203|Matematyka|0|3
-Grzegorz|Włodek|222222|1DE1203|Matematyka|0|3
+Jan|Kowalski|123456|1DE1203|Matematyka|5|3
+Grzegorz|Włodek|222222|1DE1203|Matematyka|5|3
 Jan|Kowalski|123456|1DE1101|Fizyka|5|4
 Irena|Janowska|444444|1DE1101|Fizyka|5|4
 Jan|Kowalski|123456|1DE1104|Podstawy programowania|3.5|3
