@@ -84,12 +84,15 @@ struct macierz* prod(struct macierz m, struct macierz n)
     for(int i=0; i < m.wiersze; i++)
     {    for(int j=0; j < n.kolumny; j++)
         {   
+            M->tab[i][j]=0;
             for(int k=0; k < m.kolumny; k++)
-            {sum+= m.tab[i][k] * n.tab[k][j];
-            
+            {
+                //M->tab[i][j]=0;
+                M->tab[i][j]+= m.tab[i][k] * n.tab[k][j];
+             
             }
-            M->tab[i][j]=sum;
-            sum=0;
+            //M->tab[i][j]=sum;
+            //sum=0;
         }
     }
     return M;
