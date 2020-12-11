@@ -17,7 +17,8 @@ int main(int argc, char ** argv) {
         dodaj_przedmiot(baza, argv[3], argv[4], argv[5]);
     } else if (strcmp("add_ocenka", argv[2]) == 0) {
         dodaj_ocene(baza, argv[3], argv[4], atof(argv[5]),argv[6]);
-    }   
+    } else if (strcmp("add_studp", argv[2]) == 0) {
+        dodaj_studentadp(baza, argv[3], argv[4]);}
     
     zapisz_baze(argv[1], baza);
     zwolnij(baza);

@@ -1,8 +1,13 @@
-1
-Marcin;Tak;1DDEFG;supermarcin@tak.pl
 3
+Robert;Kowalski;123456;ala@ala.pl
+Jan;Nowak;0000007;brak@brak.pl
+Grzegorz;Schetynski;00000001;nie@nie.pl
+2
 1DE2103;Numerical methods;2020Z
 1DA1245;Algorithms and python;2020Z
-1DDDD;WF;2020Z
-1
-1DDDDD;8888;5.0;dobra robota
+5
+1DE2103;0000007; ; 
+1DA1245;0000007;2.0;Beznadziejny projekt!
+1DE2103;123456; ; 
+1DA1245;00000001;3.0;Super!
+1DDDDD;8888; ; 
